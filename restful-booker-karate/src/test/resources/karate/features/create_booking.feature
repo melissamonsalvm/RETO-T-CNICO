@@ -8,7 +8,7 @@ Feature: Creates a new booking in the API
 
   @SuccessfullyCreateBooking
   Scenario: Create correctly a new booking in the API
-    * def body = read('../jsonbase/request_body_create_booking.json')
+    * def body = read('../jsonbase/request_body_create_booking_correct.json')
     * request body
     * header Accept = 'application/json'
     Given path '/booking'
@@ -20,4 +20,14 @@ Feature: Creates a new booking in the API
     And match $.booking.depositpaid == '#boolean'
     And match $.booking.bookingdates == '#object'
     And match $.booking.additionalneeds == '#string'
+
+  @CreateUnsuccessfulBooking
+  Scenario: Create a booking with invalid data
+    * def body = read('../jsonbase/request_body_create_booking_incorrect.json')
+    * request body
+    * header Accept = 'application/json'
+    Given path '/booking'
+    When method Post
+    Then status 200
+    And match response == 'Invalid date'
 

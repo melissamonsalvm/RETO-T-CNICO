@@ -1,0 +1,11 @@
+{
+  "firstname" : "Melissa",
+  "lastname" : "Monsalve",
+  "totalprice" : 111,
+  "depositpaid" : true,
+  "bookingdates" : {
+    "checkin" : "2022-13-32",
+    "checkout" : "2022-04-03"
+  },
+  "additionalneeds" : "all inclusive"
+}
