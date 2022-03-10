@@ -1,10 +1,10 @@
-function fn(){
+function fn() {
 
     karate.configure('connectTimeout', 10000);
     karate.configure('readTimeout', 10000);
     karate.configure('ssl', true);
 
-    return{
+    return {
     api:
         {
         baseUrl: 'https://restful-booker.herokuapp.com'
