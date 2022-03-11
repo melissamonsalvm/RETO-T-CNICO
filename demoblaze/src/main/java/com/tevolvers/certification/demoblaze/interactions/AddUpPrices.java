@@ -1,0 +1,12 @@
+package com.tevolvers.certification.demoblaze.interactions;
+
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Interaction;
+
+public class AddUpPrices implements Interaction {
+
+    @Override
+    public <T extends Actor> void performAs(T actor) {
+
+    }
+}
