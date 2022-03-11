@@ -7,4 +7,5 @@ public class Constants {
 
     public static final String DEMOBLAZE_URL = "https://www.demoblaze.com/";
     public static final String ACTOR = "USER";
+    public static final String SUM_TOTAL_VALUE = "3580";
 }

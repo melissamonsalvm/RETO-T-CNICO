@@ -1,9 +1,8 @@
 package com.tevolvers.certification.demoblaze.stepdefinitions;
 
+import com.tevolvers.certification.demoblaze.questions.ValueComparison;
 import com.tevolvers.certification.demoblaze.tasks.AddProducts;
-import com.tevolvers.certification.demoblaze.utils.Constants;
 import io.cucumber.java.Before;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -16,6 +15,7 @@ import org.openqa.selenium.WebDriver;
 
 import static com.tevolvers.certification.demoblaze.utils.Constants.ACTOR;
 import static com.tevolvers.certification.demoblaze.utils.Constants.DEMOBLAZE_URL;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class ShoppingCartStepDefinitions {
 
@@ -38,10 +38,7 @@ public class ShoppingCartStepDefinitions {
 
     @Then("the products is displayed in shopping cart")
     public void theProductsIsDisplayedInShoppingCart() {
-    }
-
-    @Then("Products price is added to total")
-    public void productsPriceIsAddedToTotal() {
+        OnStage.theActorInTheSpotlight().should(seeThat(ValueComparison.totalValue()));
     }
 
 }
