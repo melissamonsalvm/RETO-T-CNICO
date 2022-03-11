@@ -28,11 +28,11 @@ La automatización restful-booker-karate fue desarrollada utilizando el IDE de I
 - **Karate BDD** - Marco de pruebas
 - **Gradle** - Gestor de dependencias
 - **Cucumber** - Reportes
-- **Gherkin** - Lenguaje DLS legible por el negocio (lenguaje especifico de dominio legible por el negocio)
+- **Gherkin** - Lenguaje DLS legible por el negocio (lenguaje específico de dominio legible por el negocio)
 - ** Java**
 - **Lombok** - Anotaciones
 
-**Patrones de desarollo:**
+**Patrones de desarrollo:**
 
 - Para el desarrollo de la automatización se utilizaron los siguientes patrones de desarrollo:
 
@@ -54,7 +54,7 @@ La automatización restful-booker-karate fue desarrollada utilizando el IDE de I
 - Obtener la reserva por ID con éxito
 - Obtener una reserva por ID con datos incorrectos
 
-**Crear Token de autenticación:** crea un nuevo token de autentificación que se utilizará para acceder a la función actualizar
+**Crear Token de autenticación:** crea un nuevo token de autenticación que se utilizará para acceder a la función actualizar
 
 - Crear con éxito un nuevo token de autenticación
 - Crear un token de autenticación con datos incorrectos
@@ -95,7 +95,7 @@ o simplemente, clic derecho **"Run" (Ctrl+Shift+F10)** en la prueba que se desea
 
 ### demoblaze
 
-Demoblaze es una página demo sobre una tienda virtual, la cual permite elegir produtos por diferentes categorías (telefonos, laptops y monitores) y añadirlos al carrito, para simular una compra, además también permite simular un registro e inicio de sesión.
+Demoblaze es una página demo sobre una tienda virtual, la cual permite elegir productos por diferentes categorías (teléfonos, laptops y monitores) y añadirlos al carrito, para simular una compra, además también permite simular un registro e inicio de sesión.
 
 #### Herramientas utilizadas:
 Esta automatización fue desarrollada en Google Chrome con el fin de ejecutar los procesos para la funcionalidad de búsqueda y agregado al carrito de compras, utilizando el IDE de IntelliJ IDEA y otras herramientas como:
@@ -104,13 +104,13 @@ Esta automatización fue desarrollada en Google Chrome con el fin de ejecutar lo
 - **ScreenPlay** - Patrón de diseño
 - **Gradle** - Gestor de dependencias
 - **Cucumber** - Framework para automatizar pruebas BDD
-- **Gherkin** - Lenguaje DLS legible por el negocio (lenguaje especifico de dominio legible por el negocio)
-- ** Java**
+- **Gherkin** - Lenguaje DLS legible por el negocio (lenguaje específico de dominio legible por el negocio)
+- **Java**
 - **Selenium Web Driver** - Herramienta para automatizar acciones en navegadores web
 - **Serenity BDD** - Biblioteca de código abierto para la generación de reportes
 - **Lombok** - Anotaciones
 
-**Patrones de desarollo:**
+**Patrones de desarrollo:**
 
 - Para el desarrollo de la automatización se utilizaron los siguientes patrones de desarrollo:
 
@@ -120,12 +120,12 @@ Esta automatización fue desarrollada en Google Chrome con el fin de ejecutar lo
 **Clases:** PascalCase
 
 **Versionado:**
-- Se utilizo Git para el control de versiones
+- Se utilizó Git para el control de versiones
 
 #### Contenido de la automatización:
 
 **Carrito de compras:**
-- **Buscar y añadir productos al carrito de compra:** se añaden 2 productos de cada categoría de la tienda y se verifica el precio total de los productos.
+- **Buscar y añadir productos al carrito de compra:** Se añaden 2 productos de cada categoría de la tienda y se verifica el precio total de los productos.
 
 ### Ejecución del proyecto
 
@@ -137,7 +137,7 @@ o
 
     gradle clean test --tests ShoppingCart
 
-Parar ejecutar la prueba y generar el reporte:
+Para ejecutar la prueba y generar el reporte:
 
     gradle clean build aggregate
 
@@ -148,3 +148,4 @@ o
 Para visualizar el reporte que se genera se debe ingresar a **demoblaze/target/site/serenity/index.html**
 
 o simplemente, clic derecho **"Run" (Ctrl+Shift+F10)** en la prueba que se desea ejecutar.
+
