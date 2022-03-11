@@ -1,18 +1,16 @@
 package com.tevolvers.certification.demoblaze.interactions;
 
-import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
-import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.targets.Target;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isEnabled;
 
+
 public class Enabled implements Interaction {
 
-    Target target;
+    private Target target;
 
     public Enabled(Target target) {
         this.target = target;
