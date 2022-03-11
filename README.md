@@ -29,7 +29,7 @@ La automatización restful-booker-karate fue desarrollada utilizando el IDE de I
 - **Gradle** - Gestor de dependencias
 - **Cucumber** - Reportes
 - **Gherkin** - Lenguaje DLS legible por el negocio (lenguaje específico de dominio legible por el negocio)
-- ** Java**
+- **Java**
 - **Lombok** - Anotaciones
 
 **Patrones de desarrollo:**
@@ -42,7 +42,7 @@ La automatización restful-booker-karate fue desarrollada utilizando el IDE de I
 **Clases:**PascalCase
 
 **Versionado:**
-- Se utilizo Git para el control de versiones
+- Se utilizó Git para el control de versiones
 
 #### Contenido de la automatización:
 
@@ -148,4 +148,6 @@ o
 Para visualizar el reporte que se genera se debe ingresar a **demoblaze/target/site/serenity/index.html**
 
 o simplemente, clic derecho **"Run" (Ctrl+Shift+F10)** en la prueba que se desea ejecutar.
+
+
 
