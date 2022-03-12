@@ -37,9 +37,9 @@ La automatización restful-booker-karate fue desarrollada utilizando el IDE de I
 - Para el desarrollo de la automatización se utilizaron los siguientes patrones de desarrollo:
 
 **Variables:** camelCase
-**Funciones:**camelCase
-**Paquetes:**camelCase
-**Clases:**PascalCase
+**Funciones:** camelCase
+**Paquetes:** camelCase
+**Clases:** PascalCase
 
 **Versionado:**
 - Se utilizó Git para el control de versiones
@@ -148,6 +148,3 @@ o
 Para visualizar el reporte que se genera se debe ingresar a **demoblaze/target/site/serenity/index.html**
 
 o simplemente, clic derecho **"Run" (Ctrl+Shift+F10)** en la prueba que se desea ejecutar.
-
-
-
