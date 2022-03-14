@@ -1,5 +1,6 @@
 package com.tevolvers.certification.demoblaze.tasks;
 
+import com.tevolvers.certification.demoblaze.interactions.AddUpPrices;
 import com.tevolvers.certification.demoblaze.interactions.Enabled;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -55,7 +56,8 @@ public class AddProducts implements Task {
                 Enabled.with(ADD_TO_CART_BTN),
                 Click.on(ADD_TO_CART_BTN),
                 Enabled.with(CART_BTN),
-                Click.on(CART_BTN)
+                Click.on(CART_BTN),
+                AddUpPrices.sumOfProduct()
         );
     }
 
