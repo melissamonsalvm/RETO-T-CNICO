@@ -8,8 +8,15 @@ import static com.tevolvers.certification.demoblaze.userinterfaces.CartSection.P
 
 public class AddUpPrices implements Interaction {
 
-    public int sumTotalProducts = 0;
-    public static String priceTotal;
+    private int sumTotalProducts = 0;
+    private static String priceTotal;
+
+    public AddUpPrices() {
+    }
+
+    public static String getPriceTotal() {
+        return priceTotal;
+    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
@@ -17,12 +24,13 @@ public class AddUpPrices implements Interaction {
             actor.attemptsTo(
                     Enabled.with(PRODUCT_PRICE.of(String.valueOf(i)))
             );
-            String label = Text.of(PRODUCT_PRICE.of(String.valueOf(i)).getCssOrXPathSelector()).answeredBy(actor).toString();
+            String label = Text.of(PRODUCT_PRICE.of(String.valueOf(i)).getCssOrXPathSelector()).answeredBy(actor);
             sumTotalProducts += Integer.parseInt(label);
             System.out.println("sum " + sumTotalProducts);
         }
         priceTotal = String.valueOf(sumTotalProducts);
     }
+
 
     public static AddUpPrices sumOfProduct() {
         return new AddUpPrices();

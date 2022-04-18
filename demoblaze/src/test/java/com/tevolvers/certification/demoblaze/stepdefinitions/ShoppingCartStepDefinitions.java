@@ -1,6 +1,5 @@
 package com.tevolvers.certification.demoblaze.stepdefinitions;
 
-import com.tevolvers.certification.demoblaze.questions.TextOf;
 import com.tevolvers.certification.demoblaze.tasks.AddProducts;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Then;
@@ -10,10 +9,11 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
+import net.serenitybdd.screenplay.questions.Text;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
-import static com.tevolvers.certification.demoblaze.interactions.AddUpPrices.priceTotal;
+import static com.tevolvers.certification.demoblaze.interactions.AddUpPrices.getPriceTotal;
 import static com.tevolvers.certification.demoblaze.userinterfaces.CartSection.TOTAL_PRICE;
 import static com.tevolvers.certification.demoblaze.utils.Constants.ACTOR;
 import static com.tevolvers.certification.demoblaze.utils.Constants.DEMOBLAZE_URL;
@@ -41,6 +41,6 @@ public class ShoppingCartStepDefinitions {
 
     @Then("the products is displayed in shopping cart with the total price of the products")
     public void theProductsIsDisplayedInShoppingCartWithTheTotalPriceOfTheProducts() {
-        OnStage.theActorInTheSpotlight().should(seeThat(TextOf.the(TOTAL_PRICE), equalTo(priceTotal)));
+        OnStage.theActorInTheSpotlight().should(seeThat(Text.of(TOTAL_PRICE), equalTo(getPriceTotal())));
     }
 }
