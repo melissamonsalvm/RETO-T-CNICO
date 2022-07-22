@@ -8,7 +8,7 @@ Feature: Returns a specific booking based upon the booking id provided
 
   @GetBookingByIdSuccessfully
   Scenario: Get booking by id successfully
-    * def createBooking = call read('../features/create_booking.feature@SuccessfullyCreateBooking')
+    * def createBooking = call read('create_booking.feature@SuccessfullyCreateBooking')
     * def idBooking = createBooking.response.bookingid
     * print idBooking
     * header Accept = 'application/json'

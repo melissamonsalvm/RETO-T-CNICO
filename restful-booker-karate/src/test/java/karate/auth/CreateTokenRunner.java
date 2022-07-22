@@ -1,8 +1,8 @@
-package karate.booking.runners;
+package karate.auth;
 
 import com.intuit.karate.junit5.Karate;
 
-import static karate.booking.utils.ConstantString.CLASS_PATH_CREATE_TOKEN;
+import static karate.ConstantString.CLASS_PATH_CREATE_TOKEN;
 
 public class CreateTokenRunner {
 

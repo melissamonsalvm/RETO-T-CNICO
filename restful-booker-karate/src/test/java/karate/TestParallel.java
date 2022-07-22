@@ -1,4 +1,4 @@
-package karate.booking;
+package karate;
 
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import static karate.booking.utils.ConstantString.*;
+import static karate.ConstantString.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestParallel {

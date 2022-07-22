@@ -1,8 +1,8 @@
-package karate.booking.runners;
+package karate.booking;
 
 import com.intuit.karate.junit5.Karate;
 
-import static karate.booking.utils.ConstantString.CLASS_PATH_UPDATE_BOOKING;
+import static karate.ConstantString.CLASS_PATH_UPDATE_BOOKING;
 
 public class UpdateBookingRunner {
     @Karate.Test

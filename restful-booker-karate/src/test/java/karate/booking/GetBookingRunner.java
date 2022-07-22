@@ -1,8 +1,8 @@
-package karate.booking.runners;
+package karate.booking;
 
 import com.intuit.karate.junit5.Karate;
 
-import static karate.booking.utils.ConstantString.CLASS_PATH_GET_BOOKING;
+import static karate.ConstantString.CLASS_PATH_GET_BOOKING;
 
 public class GetBookingRunner {
 

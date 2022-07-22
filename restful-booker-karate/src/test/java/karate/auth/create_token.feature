@@ -7,11 +7,11 @@ Feature: Creates a new auth token to use for access to the PUT and DELETE /booki
     * url api.baseUrl
     * def username = credentials.username
     * def password = credentials.password
+    * def body = read('../booking/credentials.json')
 
   @successfullyCreateAuthenticationToken
   Scenario: Successfully create a new authentication token
     * header Accept = 'application/json'
-    * def body = read('../jsonbase/credentials.json')
     * request body
     Given path '/auth'
     When method Post

@@ -5,15 +5,15 @@ Feature: Updates a current booking
 
   Background:
     * url api.baseUrl
-    * def bookingToUpgrade = call read('../features/get_booking.feature@GetBookingByIdSuccessfully')
+    * def bookingToUpgrade = call read('get_booking.feature@GetBookingByIdSuccessfully')
     * def idBookingToUpgrade = bookingToUpgrade.idBooking
 
   @UpdateBookingSuccessfully
   Scenario: Correctly update a booking by id
-    * def authToken = call read('../features/create_token.feature@successfullyCreateAuthenticationToken')
+    * def authToken = call read('classpath:karate/auth/create_token.feature@successfullyCreateAuthenticationToken')
     * header Accept = 'application/json'
     * header Cookie = 'token=' + authToken.response.token
-    * def body = read('../jsonbase/request_body_update_booking_correct.json')
+    * def body = read('request_body_update_booking_correct.json')
     * request body
     Given path '/booking' , idBookingToUpgrade
     When method Put

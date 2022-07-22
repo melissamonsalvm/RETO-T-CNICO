@@ -8,7 +8,7 @@ Feature: Creates a new booking in the API
 
   @SuccessfullyCreateBooking
   Scenario: Create correctly a new booking in the API
-    * def body = read('../jsonbase/request_body_create_booking_correct.json')
+    * def body = read('request_body_create_booking_correct.json')
     * request body
     * header Accept = 'application/json'
     Given path '/booking'
@@ -23,7 +23,7 @@ Feature: Creates a new booking in the API
 
   @CreateUnsuccessfulBooking
   Scenario: Create a booking with invalid data
-    * def body = read('../jsonbase/request_body_create_booking_incorrect.json')
+    * def body = read('request_body_create_booking_incorrect.json')
     * request body
     * header Accept = 'application/json'
     Given path '/booking'
